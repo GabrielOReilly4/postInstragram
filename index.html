@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Post - Meilin Pixel</title>
+  </head>
+  <body>
+    <div class="post">
+      <div class="header">
+        <div class="profile-container">
+          <img src="images/meilin.jpg" alt="Perfil" class="profile-img" />
+          <div class="profile-preview">
+            <img src="images/meilin.jpg" alt="Preview" />
+          </div>
+        </div>
+        <span class="username">itsmeilin</span>
+      </div>
+
+      <img src="images/chinatown.jpg" alt="Post" class="post-img" ondblclick="toggleLike()" />
+
+      <div class="icons">
+        <div>
+          <img id="heart" src="icons/heart.png" class="icon" onclick="toggleLike()" />
+          <img src="icons/comment.png" class="icon" onclick="addCommentBox()" />
+        </div>
+        <img id="save" src="icons/save.png" class="icon" onclick="savePost()" />
+      </div>
+
+      <div class="likes"><span id="likeCount">39.784</span> curtidas</div>
+      <div class="description">
+        <b>itsmeilin</b> Explorando as cores e sabores da antiga Chinatown 🏮🍜✨
+      </div>
+      <div id="commentSection"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
